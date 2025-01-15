@@ -1,0 +1,4671 @@
+{
+	"info": {
+		"_postman_id": "b38c9713-06b6-4a0b-ae11-4dbec27cf58a",
+		"name": "selectgearmotors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5134553"
+	},
+	"item": [
+		{
+			"name": "client-api",
+			"item": [
+				{
+					"name": "client-types",
+					"item": [
+						{
+							"name": "client-types",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Pragmático 55\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{client-context}}:{{client-port}}/api/v1/client-types",
+									"host": [
+										"{{client-context}}"
+									],
+									"port": "{{client-port}}",
+									"path": [
+										"api",
+										"v1",
+										"client-types"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "client-types",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJraWQiOiJ4Y2pqbUVqS2dCcTFydkczRWNXOFAzQ3JkS0R5U0ZLT0huYnBEVjV3eCtnPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiUk45bzhLVGoyUW1MU3c0MkNCejJsdyIsInN1YiI6IjM0YTgzNDU4LWQwZDEtNzBlZS04YmY0LWJlMjRlMjZhMjkxNCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX05iMG02MG5raiIsImN1c3RvbTppZCI6IjcwZDU3ZTFhLTMwYjItNDA3ZC1hNzVjLThmZjc2NDNjODQ2MCIsImNvZ25pdG86dXNlcm5hbWUiOiJoZWl0b3IuYml0dGVuY291cnQuYXpldmVkb0BzZWxlY3RnZWFybW90b3JzLmNvbS5iciIsInByZWZlcnJlZF91c2VybmFtZSI6ImhlaXRvci5iaXR0ZW5jb3VydC5hemV2ZWRvQHNlbGVjdGdlYXJtb3RvcnMuY29tLmJyIiwiYXVkIjoiNXFobGhjOW1wZzIwNTFhcjdzMTBqM3J1cSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNzI2NjkxODk0LCJuYW1lIjoiSGVpdG9yIEJpdHRlbmNvdXJ0IGRlIEF6ZXZlZG8iLCJleHAiOjE3MjY2OTU0OTQsImlhdCI6MTcyNjY5MTg5NCwianRpIjoiMTFhYjY4NGQtNDkxNS00NDA2LWJhZTEtMDFjNzBhMDZjZTA3IiwiZW1haWwiOiJoZWl0b3IuYml0dGVuY291cnQuYXpldmVkb0BzZWxlY3RnZWFybW90b3JzLmNvbS5iciJ9.KBSwmZfhqalx54dO9Gc5pjgI0YVPsCWvlwF-6auxBDQYUgAGc9EcbK6ztTqm8YVZ3nxejykJn3oA4ldMDaK42X79ihqGlVAplKw9Yok_XSTarfC5m_uC6WlmVMC1HIWz1w70JFFEKAotlLcHzHGW1lRUp6MJS8I25biGm8pC1zgVZT0HhqmK1VBdOX0SDLMZL8EW4cM6rFwrfZ2Qu7emPP3LHPWLCmAmjdl_Ot2FZKvHgs-0rLEIgL9-RGuC_sZ4oZASF4PrKGmScTKDJurvvu9gz9ngzCV88zNjwfBHf8yX0p_JIjKVcbi665lzNwozHVLcNw_m3e8zd5NfUoEmFg&access_token=eyJraWQiOiJJaEtlOE5LQURwbFZDM3NOa3gxa2NwWldFS3FaNExiVktubDRrZm9DdmVnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIzNGE4MzQ1OC1kMGQxLTcwZWUtOGJmNC1iZTI0ZTI2YTI5MTQiLCJjb2duaXRvOmdyb3VwcyI6WyJhZG1pbiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9OYjBtNjBua2oiLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiI1cWhsaGM5bXBnMjA1MWFyN3MxMGozcnVxIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiBvcGVuaWQgcHJvZmlsZSBlbWFpbCIsImF1dGhfdGltZSI6MTcyNjY5MTg5NCwiZXhwIjoxNzI2Njk1NDk0LCJpYXQiOjE3MjY2OTE4OTQsImp0aSI6IjA5MGFhM2ZmLWZlNjYtNGEzYS05NjVkLTYwZjAxODllNmE5ZiIsInVzZXJuYW1lIjoiaGVpdG9yLmJpdHRlbmNvdXJ0LmF6ZXZlZG9Ac2VsZWN0Z2Vhcm1vdG9ycy5jb20uYnIifQ.XFzRx-2pylRKgfQbrkRKLgj642hrsUbaloLFoR0HeEts_t14x6FDktDec7ldeA21-dsEs89z58YM0ZhcV83D8Ef_HQmzTB7K2FIgMOcSQ3ikUaUX2TOWkrK1eaQ1csPgqDTgUZgDs0F6MvfEQIYEWwEzy30UREEPhcXIZXwTq3cmElOTLwfjWOajDyLXsNY4vcblidelgVucD0Go3F3gaPWib_vjbx_ESip-UBQxBs8brBci6rG4iLXnt5IPusRbvD2Hlzaon1KB9kLOgjVi8CHXmL8K41ekfpTO7E6EsevckWT070riWNM5Kx1dkzhk8gT7tdLUJImZ3-w4En70fQ",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{client-context}}:{{client-port}}/api/v1/client-types",
+									"host": [
+										"{{client-context}}"
+									],
+									"port": "{{client-port}}",
+									"path": [
+										"api",
+										"v1",
+										"client-types"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "clients",
+					"item": [
+						{
+							"name": "clients",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Rogério Fontes Toma 8556\",\r\n    \"email\": \"rogerio.fontes.tomaz8556@gmail.com\",\r\n    \"mobile\": \"(34) 97452-6758\",\r\n    \"mediaId\": 1,\r\n    \"description\": \"sdas\",\r\n    \"address\": \"AVa. snsosos, 122\",\r\n    \"dataProcessingConsent\": true,\r\n    \"clientTypeId\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{client-context}}:{{client-port}}/api/v1/clients",
+									"host": [
+										"{{client-context}}"
+									],
+									"port": "{{client-port}}",
+									"path": [
+										"api",
+										"v1",
+										"clients"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "clients",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{client-context}}:{{client-port}}/api/v1/clients",
+									"host": [
+										"{{client-context}}"
+									],
+									"port": "{{client-port}}",
+									"path": [
+										"api",
+										"v1",
+										"clients"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "clients-code",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{client-context}}:{{client-port}}/api/v1/clients/code/4b886da7-47de-4575-886c-2a85e4de4e10",
+									"host": [
+										"{{client-context}}"
+									],
+									"port": "{{client-port}}",
+									"path": [
+										"api",
+										"v1",
+										"clients",
+										"code",
+										"4b886da7-47de-4575-886c-2a85e4de4e10"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "client-legals",
+					"item": [
+						{
+							"name": "client-legals",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"socialName\": \"RFT - CA\",\r\n    \"fantasyName\": \"RFT - CA\",\r\n    \"companyId\": \"31.596.737/0001-42\",\r\n    \"foundationDate\": \"13/09/2022\",\r\n    \"clientId\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{client-context}}:{{client-port}}/api/v1/client-legals",
+									"host": [
+										"{{client-context}}"
+									],
+									"port": "{{client-port}}",
+									"path": [
+										"api",
+										"v1",
+										"client-legals"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "client-legals",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{client-context}}:{{client-port}}/api/v1/client-legals",
+									"host": [
+										"{{client-context}}"
+									],
+									"port": "{{client-port}}",
+									"path": [
+										"api",
+										"v1",
+										"client-legals"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "client-legals Copy",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{client-context}}:{{client-port}}/api/v1/client-legals/1",
+									"host": [
+										"{{client-context}}"
+									],
+									"port": "{{client-port}}",
+									"path": [
+										"api",
+										"v1",
+										"client-legals",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "client-physicals",
+					"item": [
+						{
+							"name": "client-physicals",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"socialId\": \"255.817.810-52\",\r\n    \"socialIdDispatchDate\": \"13/09/2022\",\r\n    \"documentId\": \"99.999.999-9\",\r\n    \"documentDistrict\": \"SP\",\r\n    \"documentDispatchDate\": \"13/09/2022\",\r\n    \"birthDate\": \"13/09/2022\",\r\n    \"clientId\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{client-context}}:{{client-port}}/api/v1/client-physicals",
+									"host": [
+										"{{client-context}}"
+									],
+									"port": "{{client-port}}",
+									"path": [
+										"api",
+										"v1",
+										"client-physicals"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "client-physicals",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{client-context}}:{{client-port}}/api/v1/client-physicals",
+									"host": [
+										"{{client-context}}"
+									],
+									"port": "{{client-port}}",
+									"path": [
+										"api",
+										"v1",
+										"client-physicals"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "client-physicalsById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{client-context}}:{{client-port}}/api/v1/client-physicals/1",
+									"host": [
+										"{{client-context}}"
+									],
+									"port": "{{client-port}}",
+									"path": [
+										"api",
+										"v1",
+										"client-physicals",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "client-medias",
+					"item": [
+						{
+							"name": "media",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{client-context}}:{{client-port}}/api/v1/medias",
+									"host": [
+										"{{client-context}}"
+									],
+									"port": "{{client-port}}",
+									"path": [
+										"api",
+										"v1",
+										"medias"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "media-client",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/roger/OneDrive/Imagens/ESG.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{client-context}}:{{client-port}}/api/v1/medias",
+									"host": [
+										"{{client-context}}"
+									],
+									"port": "{{client-port}}",
+									"path": [
+										"api",
+										"v1",
+										"medias"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "company-api",
+			"item": [
+				{
+					"name": "company-types",
+					"item": [
+						{
+							"name": "company-types",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Sociedade Limitada (Ltda.)\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{company-context}}:{{company-port}}/api/v1/company-types",
+									"host": [
+										"{{company-context}}"
+									],
+									"port": "{{company-port}}",
+									"path": [
+										"api",
+										"v1",
+										"company-types"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "company-types",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{company-context}}:{{company-port}}/api/v1/company-types",
+									"host": [
+										"{{company-context}}"
+									],
+									"port": "{{company-port}}",
+									"path": [
+										"api",
+										"v1",
+										"company-types"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "companies",
+					"item": [
+						{
+							"name": "companies",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"socialName\": \"Road 47 - Sociedade Limitada (Ltda.)\",\r\n    \"fantasyName\": \"Road 47\",\r\n    \"email\": \"road47@gmail.com\",\r\n    \"mobile\": \"(34) 97452-6758\",\r\n    \"mediaId\": 1,\r\n    \"description\": \"sdas\",\r\n    \"address\": \"AVa. snsosos, 122\",\r\n    \"dataProcessingConsent\": true,\r\n    \"companyTypeId\": 1,\r\n    \"companyId\": \"12.987.568/0001-27\",\r\n    \"foundationDate\": \"13/09/2022\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{company-context}}:{{company-port}}/api/v1/companies",
+									"host": [
+										"{{company-context}}"
+									],
+									"port": "{{company-port}}",
+									"path": [
+										"api",
+										"v1",
+										"companies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "companies",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{company-context}}:{{company-port}}/api/v1/companies",
+									"host": [
+										"{{company-context}}"
+									],
+									"port": "{{company-port}}",
+									"path": [
+										"api",
+										"v1",
+										"companies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "companies-code",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{company-context}}:{{company-port}}/api/v1/companies/code/2eaad310-84a7-4bed-a257-e3e5277f4a61",
+									"host": [
+										"{{company-context}}"
+									],
+									"port": "{{company-port}}",
+									"path": [
+										"api",
+										"v1",
+										"companies",
+										"code",
+										"2eaad310-84a7-4bed-a257-e3e5277f4a61"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "car-sellers",
+					"item": [
+						{
+							"name": "car-sellers",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"João dos Carros31\",\r\n    \"email\": \"joao.dos.carros31@localhost.com\",\r\n    \"mobile\": \"(34) 99291-9819\",\r\n    \"socialId\": \"327.126.150-42\",\r\n    \"socialIdDispatchDate\": \"13/09/2022\",\r\n    \"documentId\": \"99.999.999-9\",\r\n    \"documentDistrict\": \"SP\",\r\n    \"documentDispatchDate\": \"13/09/2022\",\r\n    \"address\": \"AVa. snsosos, 122\",\r\n    \"birthDate\": \"13/09/2022\",\r\n    \"companyId\": 1,\r\n    \"mediaId\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{company-context}}:{{company-port}}/api/v1/car-sellers",
+									"host": [
+										"{{company-context}}"
+									],
+									"port": "{{company-port}}",
+									"path": [
+										"api",
+										"v1",
+										"car-sellers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "car-sellers",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{company-context}}:{{company-port}}/api/v1/car-sellers",
+									"host": [
+										"{{company-context}}"
+									],
+									"port": "{{company-port}}",
+									"path": [
+										"api",
+										"v1",
+										"car-sellers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "car-sellers-CODE",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{company-context}}:{{company-port}}/api/v1/car-sellers/code/1fb95dd8-5829-45b3-8f76-433e4b080ffe",
+									"host": [
+										"{{company-context}}"
+									],
+									"port": "{{company-port}}",
+									"path": [
+										"api",
+										"v1",
+										"car-sellers",
+										"code",
+										"1fb95dd8-5829-45b3-8f76-433e4b080ffe"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "company-medias",
+					"item": [
+						{
+							"name": "media",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{company-context}}:{{company-port}}/api/v1/medias",
+									"host": [
+										"{{company-context}}"
+									],
+									"port": "{{company-port}}",
+									"path": [
+										"api",
+										"v1",
+										"medias"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "media-client",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/roger/OneDrive/Imagens/logo1.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{company-context}}:{{company-port}}/api/v1/medias",
+									"host": [
+										"{{company-context}}"
+									],
+									"port": "{{company-port}}",
+									"path": [
+										"api",
+										"v1",
+										"medias"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "vehicle-api",
+			"item": [
+				{
+					"name": "vehicle-brands",
+					"item": [
+						{
+							"name": "brands",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Ferrari\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{vehicle-context}}:{{vehicle-port}}/api/v1/brands",
+									"host": [
+										"{{vehicle-context}}"
+									],
+									"port": "{{vehicle-port}}",
+									"path": [
+										"api",
+										"v1",
+										"brands"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "brands",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Fiat\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{vehicle-context}}:{{vehicle-port}}/api/v1/brands",
+									"host": [
+										"{{vehicle-context}}"
+									],
+									"port": "{{vehicle-port}}",
+									"path": [
+										"api",
+										"v1",
+										"brands"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "vehicle-models",
+					"item": [
+						{
+							"name": "models",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Ferrari 296 2025\",\r\n    \"brandId\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{vehicle-context}}:{{vehicle-port}}/api/v1/models",
+									"host": [
+										"{{vehicle-context}}"
+									],
+									"port": "{{vehicle-port}}",
+									"path": [
+										"api",
+										"v1",
+										"models"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Models",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{vehicle-context}}:{{vehicle-port}}/api/v1/models",
+									"host": [
+										"{{vehicle-context}}"
+									],
+									"port": "{{vehicle-port}}",
+									"path": [
+										"api",
+										"v1",
+										"models"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "vehicle-categories",
+					"item": [
+						{
+							"name": "vehicle-categories",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Luxo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{vehicle-context}}:{{vehicle-port}}/api/v1/vehicle-categories",
+									"host": [
+										"{{vehicle-context}}"
+									],
+									"port": "{{vehicle-port}}",
+									"path": [
+										"api",
+										"v1",
+										"vehicle-categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "vehicle-categories",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Hibrido\",\r\n    \"brandId\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{vehicle-context}}:{{vehicle-port}}/api/v1/vehicle-categories",
+									"host": [
+										"{{vehicle-context}}"
+									],
+									"port": "{{vehicle-port}}",
+									"path": [
+										"api",
+										"v1",
+										"vehicle-categories"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "vehicles",
+					"item": [
+						{
+							"name": "vehicles",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cor\": \"Vermelho\",\r\n    \"km\": 0,\r\n    \"vehicleYear\": 2024,\r\n    \"description\": \"Ferrari 236\",\r\n    \"price\": 1500000.99,\r\n    \"vehicleCategoryId\": 1,\r\n    \"vehicleType\": \"CAR\",\r\n    \"modelId\": 1,\r\n    \"vehicleStatus\": \"AVAILABLE\",\r\n    \"vehicleFuel\": \"GASOLINE\",\r\n    \"mediaId\": 1,\r\n    \"location\": \"Uberlândia\",\r\n    \"plate\": \"GZK-8775\",\r\n    \"chassis\": \"1HGCM82633A123456\",\r\n    \"renavam\": \"76015901475\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{vehicle-context}}:{{vehicle-port}}/api/v1/vehicles",
+									"host": [
+										"{{vehicle-context}}"
+									],
+									"port": "{{vehicle-port}}",
+									"path": [
+										"api",
+										"v1",
+										"vehicles"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "vehicles/1/sold",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{vehicle-context}}:{{vehicle-port}}/api/v1/vehicles/0f9941ae-3752-4219-ba9b-545d90c94492/sold",
+									"host": [
+										"{{vehicle-context}}"
+									],
+									"port": "{{vehicle-port}}",
+									"path": [
+										"api",
+										"v1",
+										"vehicles",
+										"0f9941ae-3752-4219-ba9b-545d90c94492",
+										"sold"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "vehicles/1/reserved",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{vehicle-context}}:{{vehicle-port}}/api/v1/vehicles/0f9941ae-3752-4219-ba9b-545d90c94492/reserved",
+									"host": [
+										"{{vehicle-context}}"
+									],
+									"port": "{{vehicle-port}}",
+									"path": [
+										"api",
+										"v1",
+										"vehicles",
+										"0f9941ae-3752-4219-ba9b-545d90c94492",
+										"reserved"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "vehicles",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Hibrido\",\r\n    \"brandId\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{vehicle-context}}:{{vehicle-port}}/api/v1/vehicles",
+									"host": [
+										"{{vehicle-context}}"
+									],
+									"port": "{{vehicle-port}}",
+									"path": [
+										"api",
+										"v1",
+										"vehicles"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "vehicles -code",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Hibrido\",\r\n    \"brandId\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{vehicle-context}}:{{vehicle-port}}/api/v1/vehicles/code/f40f19c0-2af0-4279-8f1c-a508c1044d76",
+									"host": [
+										"{{vehicle-context}}"
+									],
+									"port": "{{vehicle-port}}",
+									"path": [
+										"api",
+										"v1",
+										"vehicles",
+										"code",
+										"f40f19c0-2af0-4279-8f1c-a508c1044d76"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "vehicles-medias",
+					"item": [
+						{
+							"name": "media",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{vehicle-context}}:{{vehicle-port}}/api/v1/medias",
+									"host": [
+										"{{vehicle-context}}"
+									],
+									"port": "{{vehicle-port}}",
+									"path": [
+										"api",
+										"v1",
+										"medias"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "media-client",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/roger/OneDrive/Imagens/ESG.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{vehicle-context}}:{{vehicle-port}}/api/v1/medias",
+									"host": [
+										"{{vehicle-context}}"
+									],
+									"port": "{{vehicle-port}}",
+									"path": [
+										"api",
+										"v1",
+										"medias"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "transaction-api",
+			"item": [
+				{
+					"name": "transaction-types",
+					"item": [
+						{
+							"name": "transaction-types",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Financiamento 14\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{transaction-context}}:{{transaction-port}}/api/v1/transaction-types",
+									"host": [
+										"{{transaction-context}}"
+									],
+									"port": "{{transaction-port}}",
+									"path": [
+										"api",
+										"v1",
+										"transaction-types"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "transaction-types",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "file",
+									"file": {}
+								},
+								"url": {
+									"raw": "{{transaction-context}}:{{transaction-port}}/api/v1/transaction-types",
+									"host": [
+										"{{transaction-context}}"
+									],
+									"port": "{{transaction-port}}",
+									"path": [
+										"api",
+										"v1",
+										"transaction-types"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "transaction-tests",
+					"item": [
+						{
+							"name": "transaction-types",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Financiamento 1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{transaction-context}}:{{transaction-port}}/api/sqs/send-notification-message",
+									"host": [
+										"{{transaction-context}}"
+									],
+									"port": "{{transaction-port}}",
+									"path": [
+										"api",
+										"sqs",
+										"send-notification-message"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "transaction-types",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "file",
+									"file": {}
+								},
+								"url": {
+									"raw": "{{transaction-context}}:{{transaction-port}}/api/sqs/send-document-message",
+									"host": [
+										"{{transaction-context}}"
+									],
+									"port": "{{transaction-port}}",
+									"path": [
+										"api",
+										"sqs",
+										"send-document-message"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "transactions",
+					"item": [
+						{
+							"name": "transactions",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"vehicleCode\": \"b698871e-f176-4c31-aa4c-2338af5c4e88\",\r\n    \"clientCode\": \"5cceb770-6327-436a-8ff2-c0c3418c8a29\",\r\n    \"carSellerCode\": \"1fb95dd8-5829-45b3-8f76-433e4b080ffe\",\r\n    \"price\": 69.66,\r\n    \"transactionTypeId\": 1,\r\n    \"personType\": \"PHYSICAL\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{transaction-context}}:{{transaction-port}}/api/v1/transactions",
+									"host": [
+										"{{transaction-context}}"
+									],
+									"port": "{{transaction-port}}",
+									"path": [
+										"api",
+										"v1",
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "transactions Copy",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"vehicleCode\": \"3052f628-34fa-4bbf-8187-cd79ca663143\",\r\n    \"clientCode\": \"404474ab-8c9a-4f19-8228-86bf7973810c\",\r\n    \"transactionTypeId\": 1\r\n}\r\n\r\n    ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{transaction-context}}:{{transaction-port}}/api/v1/transactions/cf97b55a-d9ae-4f7e-90c4-d838b0603e90/status/CONFIRMED",
+									"host": [
+										"{{transaction-context}}"
+									],
+									"port": "{{transaction-port}}",
+									"path": [
+										"api",
+										"v1",
+										"transactions",
+										"cf97b55a-d9ae-4f7e-90c4-d838b0603e90",
+										"status",
+										"CONFIRMED"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "transactions",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{transaction-context}}:{{transaction-port}}/api/v1/transactions",
+									"host": [
+										"{{transaction-context}}"
+									],
+									"port": "{{transaction-port}}",
+									"path": [
+										"api",
+										"v1",
+										"transactions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/transactions/code",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{transaction-context}}:{{transaction-port}}/api/v1/transactions/code/5cceb770-6327-436a-8ff2-c0c3418c8a29",
+									"host": [
+										"{{transaction-context}}"
+									],
+									"port": "{{transaction-port}}",
+									"path": [
+										"api",
+										"v1",
+										"transactions",
+										"code",
+										"5cceb770-6327-436a-8ff2-c0c3418c8a29"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "payment-api",
+			"item": [
+				{
+					"name": "payments",
+					"item": [
+						{
+							"name": "payments",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"transactionAmount\": 9822.19,\r\n    \"clientId\": \"5cceb770-6327-436a-8ff2-c0c3418c8a29\",\r\n    \"transactionId\": \"0b1d156a-f9d9-4d03-9fc4-d04ef378ead1\",\r\n    \"personType\": \"PHYSICAL\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{payment-context}}:{{payment-port}}/api/v1/payments",
+									"host": [
+										"{{payment-context}}"
+									],
+									"port": "{{payment-port}}",
+									"path": [
+										"api",
+										"v1",
+										"payments"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"transactionAmount\": 9822.19,\r\n    \"clientId\": \"404474ab-8c9a-4f19-8228-86bf7973810c\",\r\n    \"transactionId\": \"e5d39e8d-50ff-45c9-9e0b-9d578157136e\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{payment-context}}:{{payment-port}}/api/v1/payments",
+											"host": [
+												"{{payment-context}}"
+											],
+											"port": "{{payment-port}}",
+											"path": [
+												"api",
+												"v1",
+												"payments"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Location",
+											"value": "http://localhost:8888/api/v1/payments/1326498385"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 02 Sep 2024 14:21:24 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1326498385,\n    \"status\": \"pending\",\n    \"detail\": \"pending_waiting_transfer\",\n    \"qrCodeBase64\": \"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\",\n    \"qrCode\": \"00020126580014br.gov.bcb.pix0136b76aa9c2-2ec4-4110-954e-ebfe34f05b61520400005303986540892822.995802BR5917ROZbEJyumFxcKbsAZ6009Sao Paulo62230519mpqrinter13264983856304D2C8\"\n}"
+								}
+							]
+						},
+						{
+							"name": "New Request Copy",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"transactionAmount\": 9822.19,\r\n    \"clientId\": \"404474ab-8c9a-4f19-8228-86bf7973810c\",\r\n    \"transactionId\": \"8d8822d4-52b5-42e8-93db-b48b9bc9f637\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{payment-context}}:{{payment-port}}/api/v1/payments/payment/1326502839",
+									"host": [
+										"{{payment-context}}"
+									],
+									"port": "{{payment-port}}",
+									"path": [
+										"api",
+										"v1",
+										"payments",
+										"payment",
+										"1326502839"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"transactionAmount\": 9822.19,\r\n    \"clientId\": \"404474ab-8c9a-4f19-8228-86bf7973810c\",\r\n    \"transactionId\": \"8d8822d4-52b5-42e8-93db-b48b9bc9f637\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{payment-context}}:{{payment-port}}/api/v1/payments/payment/1326502839",
+											"host": [
+												"{{payment-context}}"
+											],
+											"port": "{{payment-port}}",
+											"path": [
+												"api",
+												"v1",
+												"payments",
+												"payment",
+												"1326502839"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Location",
+											"value": "http://localhost:8888/api/v1/payments/1326498385"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 02 Sep 2024 14:21:24 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1326498385,\n    \"status\": \"pending\",\n    \"detail\": \"pending_waiting_transfer\",\n    \"qrCodeBase64\": \"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\",\n    \"qrCode\": \"00020126580014br.gov.bcb.pix0136b76aa9c2-2ec4-4110-954e-ebfe34f05b61520400005303986540892822.995802BR5917ROZbEJyumFxcKbsAZ6009Sao Paulo62230519mpqrinter13264983856304D2C8\"\n}"
+								}
+							]
+						},
+						{
+							"name": "New Request Copy 2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"transactionAmount\": 9822.19,\r\n    \"clientId\": \"404474ab-8c9a-4f19-8228-86bf7973810c\",\r\n    \"transactionId\": \"8d8822d4-52b5-42e8-93db-b48b9bc9f637\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{payment-context}}:{{payment-port}}/api/v1/payments",
+									"host": [
+										"{{payment-context}}"
+									],
+									"port": "{{payment-port}}",
+									"path": [
+										"api",
+										"v1",
+										"payments"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"transactionAmount\": 9822.19,\r\n    \"clientId\": \"404474ab-8c9a-4f19-8228-86bf7973810c\",\r\n    \"transactionId\": \"8d8822d4-52b5-42e8-93db-b48b9bc9f637\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{payment-context}}:{{payment-port}}/api/v1/payments",
+											"host": [
+												"{{payment-context}}"
+											],
+											"port": "{{payment-port}}",
+											"path": [
+												"api",
+												"v1",
+												"payments"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Location",
+											"value": "http://localhost:8888/api/v1/payments/1326498385"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 02 Sep 2024 14:21:24 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1326498385,\n    \"status\": \"pending\",\n    \"detail\": \"pending_waiting_transfer\",\n    \"qrCodeBase64\": \"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\",\n    \"qrCode\": \"00020126580014br.gov.bcb.pix0136b76aa9c2-2ec4-4110-954e-ebfe34f05b61520400005303986540892822.995802BR5917ROZbEJyumFxcKbsAZ6009Sao Paulo62230519mpqrinter13264983856304D2C8\"\n}"
+								}
+							]
+						},
+						{
+							"name": "teste",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"transactionAmount\": 9822.19,\r\n    \"clientId\": \"404474ab-8c9a-4f19-8228-86bf7973810c\",\r\n    \"transactionId\": \"8d8822d4-52b5-42e8-93db-b48b9bc9f637\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{payment-context}}:{{payment-port}}/api/v1/payments/1326805739/update-status",
+									"host": [
+										"{{payment-context}}"
+									],
+									"port": "{{payment-port}}",
+									"path": [
+										"api",
+										"v1",
+										"payments",
+										"1326805739",
+										"update-status"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"transactionAmount\": 9822.19,\r\n    \"clientId\": \"404474ab-8c9a-4f19-8228-86bf7973810c\",\r\n    \"transactionId\": \"8d8822d4-52b5-42e8-93db-b48b9bc9f637\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8888/api/v1/payments",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8888",
+											"path": [
+												"api",
+												"v1",
+												"payments"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Location",
+											"value": "http://localhost:8888/api/v1/payments/1326498385"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 02 Sep 2024 14:21:24 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1326498385,\n    \"status\": \"pending\",\n    \"detail\": \"pending_waiting_transfer\",\n    \"qrCodeBase64\": \"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\",\n    \"qrCode\": \"00020126580014br.gov.bcb.pix0136b76aa9c2-2ec4-4110-954e-ebfe34f05b61520400005303986540892822.995802BR5917ROZbEJyumFxcKbsAZ6009Sao Paulo62230519mpqrinter13264983856304D2C8\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "mecado-pago",
+			"item": [
+				{
+					"name": "Gerar o Token do Cartão",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"card_number\": \"4509953566233704\", // número do cartão de teste (Visa)\r\n  \"expiration_month\": 11,\r\n  \"expiration_year\": 2025,\r\n  \"security_code\": \"123\", // código CVV de teste\r\n  \"cardholder\": {\r\n    \"name\": \"APRO\" // nome fictício para teste de aprovação\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.mercadopago.com/v1/card_tokens?public_key=TEST-b152e5d5-2613-464e-8e99-ac2426901978",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mercadopago",
+								"com"
+							],
+							"path": [
+								"v1",
+								"card_tokens"
+							],
+							"query": [
+								{
+									"key": "public_key",
+									"value": "TEST-b152e5d5-2613-464e-8e99-ac2426901978"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verificar o Status do Pagamento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.mercadopago.com/v1/payments/1326804911?access_token=TEST-8818491037034779-050618-71b131c71e49ed229622b735f0f0d542-164054218",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mercadopago",
+								"com"
+							],
+							"path": [
+								"v1",
+								"payments",
+								"1326804911"
+							],
+							"query": [
+								{
+									"key": "access_token",
+									"value": "TEST-8818491037034779-050618-71b131c71e49ed229622b735f0f0d542-164054218"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Simular o Pagamento",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Idempotency-Key",
+								"value": "12e2bd1f-2013-4048-b108-bc4439cfea1f",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transaction_amount\": 1.11,\r\n    \"token\": \"c4e163820c25247080aa0d82a907712f\",\r\n    \"description\": \"Pagamento QR Code\",\r\n    \"payment_method_id\": \"visa\", \r\n    \"payer\": {\r\n        \"email\": \"rogerio.fontes.tomaz4@gmail.com\"\r\n    },\r\n    \"external_reference\": \"ORDER1326787895\", \r\n    \"installments\": 1,\r\n    \"notification_url\": \"https://www.suaurl.com/notificacao\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.mercadopago.com/v1/payments?access_token=TEST-8818491037034779-050618-71b131c71e49ed229622b735f0f0d542-164054218",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mercadopago",
+								"com"
+							],
+							"path": [
+								"v1",
+								"payments"
+							],
+							"query": [
+								{
+									"key": "access_token",
+									"value": "TEST-8818491037034779-050618-71b131c71e49ed229622b735f0f0d542-164054218"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "cognito",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "'application/x-www-form-urlencoded'",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "3u9l5ieeoemksbvcjpfkpn12i8",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "1sjf91lg6a36l0te9ngsc8clkd7qcnelg8cc5pfrpeleoqdmrf61",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "heitor.bittencourt.azevedo@selectgearmotors.com.br",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Admin@123",
+									"type": "text"
+								},
+								{
+									"key": "secret_hash",
+									"value": "UVuodzj4qHUL1CTuj1mrLoq7d4JgHKu5uQNdx0LG1dM=",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "openid profile email aws.cognito.signin.user.admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://selectgearsmotors.auth.us-east-1.amazoncognito.com/oauth2/token\n",
+							"protocol": "https",
+							"host": [
+								"selectgearsmotors",
+								"auth",
+								"us-east-1",
+								"amazoncognito",
+								"com"
+							],
+							"path": [
+								"oauth2",
+								"token\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "5qhlhc9mpg2051ar7s10j3ruq",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "i5b4ppl9fuqijup559q9ucpg3tsva130s5gf4k506oqj5ekb1cb",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "df62de59-b890-439a-b139-1a586349d368",
+									"type": "text"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "https://selectgearsmotors.auth.us-east-1.amazoncognito.com/callback",
+									"type": "text"
+								},
+								{
+									"key": "secret_hash",
+									"value": "OnEINtxswxqysQ7kn3q1Iho3NqKFkuXWqNqg7nomXWA=",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "scope",
+									"value": "openid profile email",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://selectgearsmotors.auth.us-east-1.amazoncognito.com/oauth2/token\n",
+							"protocol": "https",
+							"host": [
+								"selectgearsmotors",
+								"auth",
+								"us-east-1",
+								"amazoncognito",
+								"com"
+							],
+							"path": [
+								"oauth2",
+								"token\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://selectgearsmotors.auth.us-east-1.amazoncognito.com/oauth2/authorize?response_type=code&client_id=5qhlhc9mpg2051ar7s10j3ruq&redirect_uri=https://selectgearmotors.com.br/callback&scope=openid%20profile%20email\n",
+							"protocol": "https",
+							"host": [
+								"selectgearsmotors",
+								"auth",
+								"us-east-1",
+								"amazoncognito",
+								"com"
+							],
+							"path": [
+								"oauth2",
+								"authorize"
+							],
+							"query": [
+								{
+									"key": "response_type",
+									"value": "code"
+								},
+								{
+									"key": "client_id",
+									"value": "5qhlhc9mpg2051ar7s10j3ruq"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "https://selectgearmotors.com.br/callback"
+								},
+								{
+									"key": "scope",
+									"value": "openid%20profile%20email\n"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "bff",
+			"item": [
+				{
+					"name": "client",
+					"item": [
+						{
+							"name": "client-types",
+							"item": [
+								{
+									"name": "client-types",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"comunicativo 1\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/clients/types",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"clients",
+												"types"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "client-types",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJraWQiOiJ4Y2pqbUVqS2dCcTFydkczRWNXOFAzQ3JkS0R5U0ZLT0huYnBEVjV3eCtnPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiUk45bzhLVGoyUW1MU3c0MkNCejJsdyIsInN1YiI6IjM0YTgzNDU4LWQwZDEtNzBlZS04YmY0LWJlMjRlMjZhMjkxNCIsImNvZ25pdG86Z3JvdXBzIjpbImFkbWluIl0sImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX05iMG02MG5raiIsImN1c3RvbTppZCI6IjcwZDU3ZTFhLTMwYjItNDA3ZC1hNzVjLThmZjc2NDNjODQ2MCIsImNvZ25pdG86dXNlcm5hbWUiOiJoZWl0b3IuYml0dGVuY291cnQuYXpldmVkb0BzZWxlY3RnZWFybW90b3JzLmNvbS5iciIsInByZWZlcnJlZF91c2VybmFtZSI6ImhlaXRvci5iaXR0ZW5jb3VydC5hemV2ZWRvQHNlbGVjdGdlYXJtb3RvcnMuY29tLmJyIiwiYXVkIjoiNXFobGhjOW1wZzIwNTFhcjdzMTBqM3J1cSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNzI2NjkxODk0LCJuYW1lIjoiSGVpdG9yIEJpdHRlbmNvdXJ0IGRlIEF6ZXZlZG8iLCJleHAiOjE3MjY2OTU0OTQsImlhdCI6MTcyNjY5MTg5NCwianRpIjoiMTFhYjY4NGQtNDkxNS00NDA2LWJhZTEtMDFjNzBhMDZjZTA3IiwiZW1haWwiOiJoZWl0b3IuYml0dGVuY291cnQuYXpldmVkb0BzZWxlY3RnZWFybW90b3JzLmNvbS5iciJ9.KBSwmZfhqalx54dO9Gc5pjgI0YVPsCWvlwF-6auxBDQYUgAGc9EcbK6ztTqm8YVZ3nxejykJn3oA4ldMDaK42X79ihqGlVAplKw9Yok_XSTarfC5m_uC6WlmVMC1HIWz1w70JFFEKAotlLcHzHGW1lRUp6MJS8I25biGm8pC1zgVZT0HhqmK1VBdOX0SDLMZL8EW4cM6rFwrfZ2Qu7emPP3LHPWLCmAmjdl_Ot2FZKvHgs-0rLEIgL9-RGuC_sZ4oZASF4PrKGmScTKDJurvvu9gz9ngzCV88zNjwfBHf8yX0p_JIjKVcbi665lzNwozHVLcNw_m3e8zd5NfUoEmFg&access_token=eyJraWQiOiJJaEtlOE5LQURwbFZDM3NOa3gxa2NwWldFS3FaNExiVktubDRrZm9DdmVnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIzNGE4MzQ1OC1kMGQxLTcwZWUtOGJmNC1iZTI0ZTI2YTI5MTQiLCJjb2duaXRvOmdyb3VwcyI6WyJhZG1pbiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9OYjBtNjBua2oiLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiI1cWhsaGM5bXBnMjA1MWFyN3MxMGozcnVxIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiBvcGVuaWQgcHJvZmlsZSBlbWFpbCIsImF1dGhfdGltZSI6MTcyNjY5MTg5NCwiZXhwIjoxNzI2Njk1NDk0LCJpYXQiOjE3MjY2OTE4OTQsImp0aSI6IjA5MGFhM2ZmLWZlNjYtNGEzYS05NjVkLTYwZjAxODllNmE5ZiIsInVzZXJuYW1lIjoiaGVpdG9yLmJpdHRlbmNvdXJ0LmF6ZXZlZG9Ac2VsZWN0Z2Vhcm1vdG9ycy5jb20uYnIifQ.XFzRx-2pylRKgfQbrkRKLgj642hrsUbaloLFoR0HeEts_t14x6FDktDec7ldeA21-dsEs89z58YM0ZhcV83D8Ef_HQmzTB7K2FIgMOcSQ3ikUaUX2TOWkrK1eaQ1csPgqDTgUZgDs0F6MvfEQIYEWwEzy30UREEPhcXIZXwTq3cmElOTLwfjWOajDyLXsNY4vcblidelgVucD0Go3F3gaPWib_vjbx_ESip-UBQxBs8brBci6rG4iLXnt5IPusRbvD2Hlzaon1KB9kLOgjVi8CHXmL8K41ekfpTO7E6EsevckWT070riWNM5Kx1dkzhk8gT7tdLUJImZ3-w4En70fQ",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/clients/types",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"clients",
+												"types"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "clients",
+							"item": [
+								{
+									"name": "clients",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Rogério Fontes Toma 85588\",\r\n    \"email\": \"rogerio.fontes.tomaz85588@gmail.com\",\r\n    \"mobile\": \"(34) 97452-6758\",\r\n    \"mediaId\": 1,\r\n    \"description\": \"sdas\",\r\n    \"address\": \"Av. snsosos, 122\",\r\n    \"dataProcessingConsent\": true,\r\n    \"clientTypeId\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/clients",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"clients"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "clients",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/clients",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"clients"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "clients-code",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/clients/code/fe7b78b1-5e5f-467d-bd18-5f3d545a38a9",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"clients",
+												"code",
+												"fe7b78b1-5e5f-467d-bd18-5f3d545a38a9"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "client-legals",
+							"item": [
+								{
+									"name": "client-legals",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"socialName\": \"RFT - CA\",\r\n    \"fantasyName\": \"RFT - CA\",\r\n    \"companyId\": \"54.571.888/0001-41\",\r\n    \"foundationDate\": \"13/09/2022\",\r\n    \"clientId\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/clients/legals",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"clients",
+												"legals"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "client-legals",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/clients/legals",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"clients",
+												"legals"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "client-legals Copy",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/clients/legals/1",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"clients",
+												"legals",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "client-physicals",
+							"item": [
+								{
+									"name": "client-physicals",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"socialId\": \"900.209.880-44\",\r\n    \"socialIdDispatchDate\": \"13/09/2022\",\r\n    \"documentId\": \"99.999.999-9\",\r\n    \"documentDistrict\": \"SP\",\r\n    \"documentDispatchDate\": \"13/09/2022\",\r\n    \"birthDate\": \"13/09/2022\",\r\n    \"clientId\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/clients/physicals",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"clients",
+												"physicals"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "client-physicals",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/clients/physicals",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"clients",
+												"physicals"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "client-physicals by Client Id",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/clients/physicals/1",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"clients",
+												"physicals",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "client-medias",
+							"item": [
+								{
+									"name": "media",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/medias",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"medias"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "media-client",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "file",
+													"type": "file",
+													"src": "/C:/Users/roger/OneDrive/Imagens/logo1.png"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/medias",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"medias"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "company",
+					"item": [
+						{
+							"name": "company-types",
+							"item": [
+								{
+									"name": "company-types",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/companies/types",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"companies",
+												"types"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "company-types",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Lucro presumido 3\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/companies/types",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"companies",
+												"types"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "companies",
+							"item": [
+								{
+									"name": "companies",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"socialName\": \"Rogério Fontes Tomaz 42332259\",\r\n    \"fantasyName\": \"Rogério Fontes Tomaz 42332259 LTDA\",\r\n    \"email\": \"rogerio.fontes.tomaz42332259@gmail.com\",\r\n    \"mobile\": \"(34) 97452-6758\",\r\n    \"mediaId\": 1,\r\n    \"description\": \"sdas\",\r\n    \"address\": \"AVa. snsosos, 122\",\r\n    \"dataProcessingConsent\": true,\r\n    \"companyTypeId\": 1,\r\n    \"companyId\": \"49.350.444/0001-46\",\r\n    \"foundationDate\": \"13/09/2022\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/companies",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"companies"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "companies",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/companies",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"companies"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "companies-code",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/companies/code/76de8f67-de22-4290-8509-a11363cdec0c",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"companies",
+												"code",
+												"76de8f67-de22-4290-8509-a11363cdec0c"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "car-sellers",
+							"item": [
+								{
+									"name": "car-sellers",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Roberto Cartos9991\",\r\n    \"email\": \"roberto.cartos9991@localhost.com\",\r\n    \"mobile\": \"(34) 99291-9819\",\r\n    \"socialId\": \"875.769.330-70\",\r\n    \"socialIdDispatchDate\": \"13/09/2022\",\r\n    \"documentId\": \"99.999.999-9\",\r\n    \"documentDistrict\": \"SP\",\r\n    \"documentDispatchDate\": \"13/09/2022\",\r\n    \"birthDate\": \"13/09/2022\",\r\n    \"address\": \"Av. Araguari, 1447 B. Chaves Uberlândia/MG\",\r\n    \"companyId\": 1,\r\n    \"mediaId\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/companies/car-sellers",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"companies",
+												"car-sellers"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "car-sellers",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/companies/car-sellers",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"companies",
+												"car-sellers"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "car-sellers-CODE",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Fisico\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/companies/car-sellers/code/aee9b2a1-2e3a-405e-bf9d-14583bc9302e",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"companies",
+												"car-sellers",
+												"code",
+												"aee9b2a1-2e3a-405e-bf9d-14583bc9302e"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "company-medias",
+							"item": [
+								{
+									"name": "media",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/medias",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"medias"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "media-client",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "file",
+													"type": "file",
+													"src": "/C:/Users/roger/OneDrive/Imagens/catador.jpeg"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/medias",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"medias"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "vehicle",
+					"item": [
+						{
+							"name": "vehicle-brands",
+							"item": [
+								{
+									"name": "brands",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Ford 512\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/vehicles/brands",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"vehicles",
+												"brands"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "brands",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Fiat\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/vehicles/brands",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"vehicles",
+												"brands"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "vehicle-models",
+							"item": [
+								{
+									"name": "models",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Escort Hobby 3.02\",\r\n    \"brandId\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/vehicles/models",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"vehicles",
+												"models"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Models",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/vehicles/models",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"vehicles",
+												"models"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "vehicle-categories",
+							"item": [
+								{
+									"name": "vehicle-categories",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Hatch 5232\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/vehicles/categories",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"vehicles",
+												"categories"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "vehicle-categories",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Hibrido\",\r\n    \"brandId\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/vehicles/categories",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"vehicles",
+												"categories"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "vehicles",
+							"item": [
+								{
+									"name": "vehicles",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"cor\": \"Azul\",\r\n    \"km\": 45999,\r\n    \"vehicleYear\": 1234,\r\n    \"description\": \"Escort Hobby 1.4\",\r\n    \"price\": 92822.99,\r\n    \"vehicleCategoryId\": 1,\r\n    \"vehicleType\": \"CAR\",\r\n    \"modelId\": 1,\r\n    \"vehicleStatus\": \"AVAILABLE\",\r\n    \"vehicleFuel\": \"GASOLINE\",\r\n    \"mediaId\": 1,\r\n    \"location\": \"Uberlândia\",\r\n    \"plate\": \"GZK-8775\",\r\n    \"chassis\": \"1HGCM82633A123456\",\r\n    \"renavam\": \"76015901475\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/vehicles",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"vehicles"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "vehicles",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Hibrido\",\r\n    \"brandId\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/vehicles",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"vehicles"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "vehicles -code",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Hibrido\",\r\n    \"brandId\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/vehicles/code/0f9941ae-3752-4219-ba9b-545d90c94492",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"vehicles",
+												"code",
+												"0f9941ae-3752-4219-ba9b-545d90c94492"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "vehicles/1/sold",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/vehicles/0f9941ae-3752-4219-ba9b-545d90c94492/sold",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"vehicles",
+												"0f9941ae-3752-4219-ba9b-545d90c94492",
+												"sold"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "vehicles/1/reserved",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/vehicles/0f9941ae-3752-4219-ba9b-545d90c94492/reserved",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"vehicles",
+												"0f9941ae-3752-4219-ba9b-545d90c94492",
+												"reserved"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "vehicles-medias",
+							"item": [
+								{
+									"name": "media",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/medias",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"medias"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "media-client",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "file",
+													"type": "file",
+													"src": "/C:/Users/roger/OneDrive/Imagens/ESG.jpg"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/medias",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"medias"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "transaction",
+					"item": [
+						{
+							"name": "transaction-types",
+							"item": [
+								{
+									"name": "transaction-types",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Financiamento 3\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/transactions/types",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"transactions",
+												"types"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "transaction-types",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "file",
+											"file": {}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/transactions/types",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"transactions",
+												"types"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "transactions",
+							"item": [
+								{
+									"name": "transactions",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"vehicleCode\": \"0b71db0f-0d4c-4a19-9cc3-b85fc8409b18\",\r\n    \"clientCode\": \"fe7b78b1-5e5f-467d-bd18-5f3d545a38a9\",\r\n    \"carSellerCode\": \"e16235bd-eda7-4c19-8daa-643bc0bda420\",\r\n    \"price\": 3.67,\r\n    \"transactionTypeId\": 1,\r\n    \"personType\": \"PHYSICAL\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/transactions",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"transactions"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "transactions Copy",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"vehicleCode\": \"3052f628-34fa-4bbf-8187-cd79ca663143\",\r\n    \"clientCode\": \"404474ab-8c9a-4f19-8228-86bf7973810c\",\r\n    \"transactionTypeId\": 1\r\n}\r\n\r\n    ",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/transactions/cf97b55a-d9ae-4f7e-90c4-d838b0603e90/status/CONFIRMED",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"transactions",
+												"cf97b55a-d9ae-4f7e-90c4-d838b0603e90",
+												"status",
+												"CONFIRMED"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "transactions",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/transactions",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"transactions"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/transactions/code",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{sgm_bff-access-token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{context-bff}}:{{bff-port}}/api/v1/bff/transactions/code/e5d39e8d-50ff-45c9-9e0b-9d578157136e",
+											"host": [
+												"{{context-bff}}"
+											],
+											"port": "{{bff-port}}",
+											"path": [
+												"api",
+												"v1",
+												"bff",
+												"transactions",
+												"code",
+												"e5d39e8d-50ff-45c9-9e0b-9d578157136e"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "reservation-api",
+			"item": [
+				{
+					"name": "reservation",
+					"item": [
+						{
+							"name": "reservation",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"vehicleId\": \"0b71db0f-0d4c-4a19-9cc3-b85fc8409b18\",\r\n    \"buyerId\": \"fe7b78b1-5e5f-467d-bd18-5f3d545a38a9\",\r\n    \"statusReservation\": \"ACTIVE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{context-reservation}}:{{reservation-port}}/api/v1/reservations",
+									"host": [
+										"{{context-reservation}}"
+									],
+									"port": "{{reservation-port}}",
+									"path": [
+										"api",
+										"v1",
+										"reservations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reservation",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"vehicleId\": \"a00f1a5c-20eb-4f34-82e8-5b9b9617b395\",\r\n    \"buyerId\": \"6f68932f-197b-44d9-b835-a8b11c00040f\",\r\n    \"statusReservation\": \"SOLD\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{context-reservation}}:{{reservation-port}}/api/v1/reservations/1",
+									"host": [
+										"{{context-reservation}}"
+									],
+									"port": "{{reservation-port}}",
+									"path": [
+										"api",
+										"v1",
+										"reservations",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reservation/1/sold",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{context-reservation}}:{{reservation-port}}/api/v1/reservations/1/sold",
+									"host": [
+										"{{context-reservation}}"
+									],
+									"port": "{{reservation-port}}",
+									"path": [
+										"api",
+										"v1",
+										"reservations",
+										"1",
+										"sold"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reservation/1/cancelled",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{context-reservation}}:{{reservation-port}}/api/v1/reservations/f40f19c0-2af0-4279-8f1c-a508c1044d76/cancelled",
+									"host": [
+										"{{context-reservation}}"
+									],
+									"port": "{{reservation-port}}",
+									"path": [
+										"api",
+										"v1",
+										"reservations",
+										"f40f19c0-2af0-4279-8f1c-a508c1044d76",
+										"cancelled"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reservations",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"vehicleId\": \"857acfa2-8bd9-4cb6-8908-db494e11659b\",\r\n    \"buyerId\": \"332b7a7e-7caa-4e29-a285-b48d6ab32954\",\r\n    \"statusReservation\": \"ACTIVE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{context-reservation}}:{{reservation-port}}/api/v1/reservations",
+									"host": [
+										"{{context-reservation}}"
+									],
+									"port": "{{reservation-port}}",
+									"path": [
+										"api",
+										"v1",
+										"reservations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reservationByVehiche",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{sgm_bff-access-token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"vehicleId\": \"857acfa2-8bd9-4cb6-8908-db494e11659b\",\r\n    \"buyerId\": \"332b7a7e-7caa-4e29-a285-b48d6ab32954\",\r\n    \"statusReservation\": \"ACTIVE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{context-reservation}}:{{reservation-port}}/api/v1/reservations/vehicle/f40f19c0-2af0-4279-8f1c-a508c1044d76",
+									"host": [
+										"{{context-reservation}}"
+									],
+									"port": "{{reservation-port}}",
+									"path": [
+										"api",
+										"v1",
+										"reservations",
+										"vehicle",
+										"f40f19c0-2af0-4279-8f1c-a508c1044d76"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
